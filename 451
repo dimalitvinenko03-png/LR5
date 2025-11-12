@@ -1,0 +1,11 @@
+list=[]
+syma=int(input("Введіть число: "))
+symakv=0
+list.append(syma)
+while syma!=0 :
+    n=int(input("Введіть число: "))
+    list.append(n)
+    syma+=n
+for i in list :
+    symakv+=i**2
+print(symakv)
