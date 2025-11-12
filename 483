@@ -1,0 +1,15 @@
+n=int(input("Введіть число: "))
+list=[]
+i=0
+index=0
+while n > 0 :
+    i+=1
+    index=i
+    while index!=0 :
+        n-=1
+        if n<0 :
+            break
+        list.append(i)
+        index-=1
+for item in list :
+    print(item, end=" ")
