@@ -1,0 +1,21 @@
+import math
+x = 0
+y = 0
+while True:
+    line = input("Введіть текст: ").strip()
+    if not line:
+        break
+    parts = line.split()
+    direction = parts[0].upper()
+    steps = int(parts[1])
+    if direction == "UP":
+        y += steps
+    elif direction == "DOWN":
+        y -= steps
+    elif direction == "LEFT":
+        x -= steps
+    elif direction == "RIGHT":
+        x += steps
+distance = math.sqrt(x**2 + y**2)
+final_distance = math.floor(distance)
+print(final_distance)
