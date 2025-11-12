@@ -1,0 +1,11 @@
+n_str = input().split(" ")
+n = [int(num) for num in n_str]
+l = len(n)
+while l != 0:
+    for i in n:
+        if i % 2 != 0:
+            index = n.index(i)
+            number = n.pop(index)
+            n.append(number)
+    l -= 1
+print(n)
