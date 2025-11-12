@@ -1,0 +1,5 @@
+s = input("Введіть числа: ").split(" ")
+number = 0
+for i in s:
+    print(number, i)
+    number += 1
